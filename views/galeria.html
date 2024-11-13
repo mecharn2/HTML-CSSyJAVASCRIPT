@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/galeria.css">
     
 </head>
 <body>
@@ -24,19 +25,62 @@
         </nav>
     </header>
     <main>
-            <div>
-                <ul>
-                    <li class="galeria"><img src="../assets/images/portfolio1.jpg" alt="diseñando Web" width="850" height="500" class="galeri"></li>
-                    <li class="galeria"><img src="../assets/images/portfolio2.jpg" alt="estructura Web" width="474" height="316" class="galeri"></li>
-                    <li class="galeria"><img src="../assets/images/portfolio3.jpg" alt="Ejemplo Web" width="1800" height="1201" class="galeri"></li>
-                    <li class="galeria"><img src="../assets/images/portfolio4.jpg" alt="Web Optimizada" width="2400" height="1532" class="galeri"></li>
-                    <li class="galeria"><img src="../assets/images/portfolio5.jpg" alt="Web Nueva Optimización" width="1806" height="1052" class="galeri"></li>
-                    <li class="galeria"><img src="../assets/images/portfolio6.jpg" alt="Web Arquitecto" width="474" height="382" class="galeri"></li>
-                    <li class="galeria"><img src="../assets/images/portfolio7.jpg" alt="Web Pacifico" width="1440" height="779" class="galeri"></li>
-                    <li class="galeria"><img src="../assets/images/portfolio8.jpg" alt="Web Expreso" width="600" height="383" class="galeri"></li>
-                
-                </ul>
-             </div>
+            <div class="sliderShow-contant">
+                <div class="mySlides fade">
+                    <div class="numero">1/8</div>
+                    <img src="../assets/images/portfolio1.jpg" alt="Imagen1">
+                    <div class="texto">Imagen 1</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numero">2/8</div>
+                    <img src="../assets/images/portfolio2.jpg" alt="Imagen2">
+                    <div class="texto">Imagen 2</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numero">3/8</div>
+                    <img src="../assets/images/portfolio3.jpg" alt="Imagen3">
+                    <div class="texto">Imagen 3</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numero">4/8</div>
+                    <img src="../assets/images/portfolio4.jpg" alt="Imagen4">
+                    <div class="texto">Imagen 4</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numero">5/8</div>
+                    <img src="../assets/images/portfolio5.jpg" alt="Imagen5">
+                    <div class="texto">Imagen 5</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numero">6/8</div>
+                    <img src="../assets/images/portfolio6.jpg" alt="Imagen6">
+                    <div class="texto">Imagen 6</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numero">7/8</div>
+                    <img src="../assets/images/portfolio7.jpg" alt="Imagen7">
+                    <div class="texto">Imagen 7</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numero">8/8</div>
+                    <img src="../assets/images/portfolio8.jpg" alt="Imagen8">
+                    <div class="texto">Imagen 8</div>
+                </div>
+
+                <a class="antes" onclick="pasarImagen(-1)">&#10094;</a>
+                <a class="despues" onclick="pasarImagen(1)">&#10095;</a>
+
+            </div>
+
+                <div class="puntos">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
     </main>
         <footer>
             
@@ -51,6 +95,6 @@
       
        </footer>
        
-       <script src="../js/javascript.js"></script>
+       <script src="../js/galeria.js"></script>
 </body>
 </html>
