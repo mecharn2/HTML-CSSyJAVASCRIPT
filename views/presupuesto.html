@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trabajo Final masterD">
+    <meta name="Author" content="Toni">
+    <title>My Web</title>
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+</head>
+<body>
+    <header> <img src="../assets/images/1.png" alt="Logo cabecera" class="logo1" width="1594" height="396">
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="nav">INICIO</a></li>
+                <li class="nav1"><a href="../views/presupuesto.html" class="nav">PRESUPUESTO</a></li>
+                <li><a href="../views/galeria.html" class="nav">GALERÍA</a></li>
+                <li><a href="../views/contacto.html" class="nav">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <div class="contenedor">
+             <h2 class="titulo">ESCRIBA SUS DATOS</h2>
+                 <form class="form" id="form">
+                <div class="input-contenedor">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+                    <span class="error" id="nombreError"></span>  
+                </div>
+                <div class="input-contenedor">
+                      <label for="apellidos">Apellidos</label>
+                      <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos">
+                      <span class="error" id="apellidosError"></span>              
+                </div>
+                <div class="input-contenedor">
+                    <label for="telefono">Teléfono</label>
+                      <input type="tel" id="telefono" name="telefono" placeholder="Escriba su teléfono">
+                      <span class="error" id="telefonoError"></span> 
+                </div>
+                <div class="input-contenedor">
+                    <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Escriba su email">
+                      <span class="error" id="emailError"></span> 
+                </div>               
+               <div><input type="checkbox" name="acepta" value="SI" id="acepta" required> <label for="acepta">Acepto la política de privacidad</label></div>
+               
+                <div class="button-contenedor">
+                    <button type="submit" id="enviar">Enviar</button>
+                    <button type="reset" id="borrar">Borrar</button>
+                </div>
+            </form>
+            </div>
+            
+        </main>
+        <footer>
+            
+            <div><img src="../assets/images/2.png" alt="eslogan" class="logo2" width="1584" height="396"></div> 
+                <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/instagram.png" alt="instagram" width="512" height="512" class="soci1"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/facebook.png" alt="facebook" width="512" height="512" class="soci1"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn" width="512" height="512" class="soci"></a>
+                <a href="https://twitter.com" target="_blank"><img src="../assets/images/twitter_5968830.png" alt="twitter" width="512" height="512" class="soci"></a>
+            <div class="direc"><p>©Antonio Fco Mellado. Todos los derechos reservados.</p>
+                <div class="poli"><a href="../views/politica.html">Política de Privacidad y Cookies.Condiciones de Venta</a></div>  
+                <p>Calle Granada, 19 Alcalá del Rio. 41200. Sevilla</p></div>
+      
+       </footer>
+       
+       <script src="../js/presupuesto.js"></script>
+       <script src="../js/javascript.js"></script>
+       
+   
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+/*ESTILOS FORMULARIOS*/
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width:  auto;
+    max-width: 60vh;
+    height: auto;
+    margin: 50px auto;
+    border: 1px solid rgb(107, 103, 103);
+    border-radius: 10px;
+    padding: 40px;
+    background: #fff;
+    color: black;
+
+}
+.titulo{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60% auto;
+    margin: 0 auto;
+    
+}
+
+.input-contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(107, 103, 103);
+    justify-content: center;
+    align-items: center;
+}
+
+.button-contenedor{
+    display: flex;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.valido{
+    border-color: green;
+}
+
+.invalido {
+    border-color: red;
+}
+
+.error{
+    color: red;
+}
+
+
+
+
