@@ -4,16 +4,29 @@
     display: flex;
     flex-direction: column;
     width:  auto;
-    max-width: 60vh;
+    max-width: 600px;
     height: auto;
     margin: 10px auto;
-    border: 1px solid rgb(107, 103, 103);
+    border: solid 1px rgb(107, 103, 103);
     border-radius: 10px;
     box-shadow: 5px 5px 15px black;
     padding: 10px;
     background: #fff;
-    color: black;
+    color: black;   
 }
+
+.contenedor1{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    border: solid 1px rgb(107, 103, 103);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    padding: 55px;
+    
+}
+
 .titulo{
     text-align: center;
 }
@@ -23,11 +36,10 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 60% auto;
     margin: 0 auto;    
 }
 h3{
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 .condiciones{
@@ -58,6 +70,7 @@ input{
 .button-contenedor{
     display: flex;
     margin-top: 20px;
+    justify-content: center;
     
 }
 
