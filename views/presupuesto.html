@@ -25,8 +25,9 @@
         </nav>
     </header>
         <main>
+            <h2 class="titulo">FORMULARIO DE SOLICITUD</h2>
             <div class="contenedor">
-             <h2 class="titulo">ESCRIBA SUS DATOS</h2>
+             <h3 class="titulo2">Datos</h3>
                  <form class="form" id="form">
                 <div class="input-contenedor">
                     <label for="nombre">Nombre</label>
@@ -47,7 +48,46 @@
                     <label for="email">Email</label>
                       <input type="email" id="email" name="email" placeholder="Escriba su email">
                       <span class="error" id="emailError"></span> 
-                </div>               
+                </div> 
+                
+                <div class="producto"><label for="producto">Elija un producto</label>
+                    <select name="producto" id="producto">
+                        <option value="150">Estudio Básico Diseño UX 150€</option>
+                        <option value="200">Prototipo Baja Fidelidad 200€</option>
+                        <option value="250">Prototipo Alta Fidelidad 250€</option>
+                        <option value="500">Estudio y Diseño UX completo 500€</option>
+                        <option value="800">Web(HTML y CSS) 800€</option>
+                        <option value="1200">Web(HTML, CSS y JAVASCRIPT) 1200€</option>
+                        <option value="1500">Creación completa pagina Web 1500€</option>
+                    </select>
+                </div>
+                <div class="pago"><label for="pago">Elija forma de Pago</label>
+                      <select name="pago" id="pago">
+                        <option value="contado">Contado</option>
+                        <option value="plazo3">Pago en 3 Meses</option>
+                        <option value="plazo6">Pago en 6 meses</option>
+                        <option value="plazo12">Pago en 12 meses</option>
+                      </select>              
+                </div>
+                <div class="extras">
+                    <div><label for="basicoPlus">Estudio Básico + Estudio Competencias</label>
+                        <input type="checkbox" value="120" name="basicoPlus" id="basicoPlus">
+                    </div>
+                    <div><label for="presentacion">Presentación in situ Estudio Diseño UX</label>
+                        <input type="checkbox" value="300" name="presentacion" id="presentacion">
+                    </div>
+                    <div><label for="portfolio">Porfolio Personal</label>
+                        <input type="checkbox" value="200" name="porfolio" id="porfolio">
+                    </div>
+                    <div><label for="mapaGps">Mapa màs  Localización GPS</label>
+                        <input type="checkbox" value="210" name="mapaGps" id="mapaGps">
+                    </div>
+                </div>
+                <div>
+                    <label for="presupuesto">Presupuesto Estimado</label>
+                    <input id="total" type="text" value="">
+                </div>
+
                <div><input type="checkbox" name="acepta" value="SI" id="acepta" required> <label for="acepta">Acepto la política de privacidad</label></div>
                
                 <div class="button-contenedor">

@@ -1,13 +1,3 @@
-
-/*.galeri{
-    width:400px;
-    height:400px;
-}
-
-.galeria{
-    margin: 5px 5px;   
-}*/
-
 img{
     width: 100%;
     height: 500px;
@@ -26,21 +16,18 @@ img{
 .antes, .despues{
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: auto;
     margin-top: -22px;
     padding: 12px;
     color: rgb(234, 238, 230);
     font-weight: bold;
-    font-size: px;
+    font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
     transition: 0.4s ease;
     background-color: rgb(192, 188, 188);
-    border: solid 1px rgb(209, 205, 205);
-    
-
-    
+    border: solid 1px rgb(209, 205, 205);   
 }
 
 .despues{
@@ -94,7 +81,8 @@ img{
 }
 
 .puntos{
-    margin-left: 46%;
+   text-align: center;
+ 
 }
 .active, .dot:hover{
     background-color: white;
