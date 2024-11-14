@@ -1,6 +1,9 @@
 img{
     width: 100%;
     height: 500px;
+    border: solid 1px white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
 }
 
 .sliderShow-contant{

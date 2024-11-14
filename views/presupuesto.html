@@ -49,7 +49,9 @@
                       <input type="email" id="email" name="email" placeholder="Escriba su email">
                       <span class="error" id="emailError"></span> 
                 </div> 
-                
+            </div>
+            <div class="contenedor">
+                <h3>Productos</h3>
                 <div class="producto"><label for="producto">Elija un producto</label>
                     <select name="producto" id="producto">
                         <option value="150">Estudio Básico Diseño UX 150€</option>
@@ -87,13 +89,22 @@
                     <label for="presupuesto">Presupuesto Estimado</label>
                     <input id="total" type="text" value="">
                 </div>
-
-               <div><input type="checkbox" name="acepta" value="SI" id="acepta" required> <label for="acepta">Acepto la política de privacidad</label></div>
-               
-                <div class="button-contenedor">
-                    <button type="submit" id="enviar">Enviar</button>
-                    <button type="reset" id="borrar">Borrar</button>
+            </div>
+            <div class="contenedor">
+                <div class="condiciones">
+                    <h3>Aceptación de condiciones y envió de presupuesto</h3>
+                    <div><input type="checkbox" name="acepta" value="SI" id="acepta" required> <label for="acepta">Acepto la política de privacidad</label></div>
+                    <div class="button-contenedor">
+                        <button type="submit" id="enviar">Enviar</button>
+                        <button type="reset" id="borrar">Borrar</button>
+                    </div>
                 </div>
+                 
+            </div>
+                
+                
+               
+                
             </form>
             </div>
             

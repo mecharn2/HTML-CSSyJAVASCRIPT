@@ -79,7 +79,9 @@ a{
     width: 80%;
     margin: auto;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
     height: 296px;
+    
 }
 
  .dise {
@@ -100,8 +102,8 @@ a{
     display: block;
     width: 80%;
     margin: auto;
-    padding-top: 10px;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
     height: 296px;
     
     

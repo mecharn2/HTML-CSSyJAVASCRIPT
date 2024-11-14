@@ -9,10 +9,10 @@
     margin: 10px auto;
     border: 1px solid rgb(107, 103, 103);
     border-radius: 10px;
-    padding: 20px;
+    box-shadow: 5px 5px 15px black;
+    padding: 10px;
     background: #fff;
     color: black;
-
 }
 .titulo{
     text-align: center;
@@ -24,12 +24,19 @@
     flex-direction: column;
     gap: 10px;
     width: 60% auto;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
 h3{
-    font-size: 20px;
+    font-size: 20px; 
 }
+
+.condiciones{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;        
+}
+
 
 .input-contenedor{
     display: flex;
