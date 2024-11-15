@@ -1,6 +1,5 @@
 let indice = 1;
 
-
 mostrarSlider(indice);
 
 function pasarImagen(valor){
