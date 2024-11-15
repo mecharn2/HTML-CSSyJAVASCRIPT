@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trabajo Final masterD">
+    <meta name="Author" content="Toni">
+    <title>My Web</title>
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+</head>
+<body>
+    <header> <img src="../assets/images/1.png" alt="Logo cabecera" class="logo1" width="1594" height="396">
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="nav">INICIO</a></li>
+                <li class="nav1"><a href="../views/presupuesto.html" class="nav">PRESUPUESTO</a></li>
+                <li><a href="../views/galeria.html" class="nav">GALERÍA</a></li>
+                <li><a href="../views/contacto.html" class="nav">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <div><h2 class="titulo">FORMULARIO DE SOLICITUD</h2></div>
+           <div class="contenedor">
+            <form class="form" id="form">
+                <div>
+                    <h3 class="input-contenedor">Datos</h3>
+                    <div class="input-contenedor">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+                        <span class="error" id="nombreError"></span>  
+                    </div>
+                    <div class="input-contenedor">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos">
+                        <span class="error" id="apellidosError"></span>              
+                    </div>
+                    <div class="input-contenedor">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Escriba su teléfono">
+                        <span class="error" id="telefonoError"></span> 
+                    </div>
+                    <div class="input-contenedor">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Escriba su email">
+                        <span class="error" id="emailError"></span> 
+                    </div> 
+                </div>
+
+                <div class="contenedor1">
+                    <h3>Productos</h3>
+                    <div class="producto"><label for="producto">Elija un producto</label>
+                        <select name="producto" id="producto">
+                            <option value="150">Estudio Básico Diseño UX 150€</option>
+                            <option value="200">Prototipo Baja Fidelidad 200€</option>
+                            <option value="250">Prototipo Alta Fidelidad 250€</option>
+                            <option value="500">Estudio y Diseño UX completo 500€</option>
+                            <option value="800">Web(HTML y CSS) 800€</option>
+                            <option value="1200">Web(HTML, CSS y JAVASCRIPT) 1200€</option>
+                            <option value="1500">Creación completa pagina Web 1500€</option>
+                        </select>
+                    </div>
+                    <div class="pago"><label for="pago">Elija forma de Pago</label>
+                        <select name="pago" id="pago">
+                            <option value="contado">Contado</option>
+                            <option value="plazo3">Pago en 3 Meses</option>
+                            <option value="plazo6">Pago en 6 meses</option>
+                            <option value="plazo12">Pago en 12 meses</option>
+                        </select>              
+                    </div>
+                    <div class="extras">
+                        <div>
+                            <label for="basicoPlus">Estudio Básico + Estudio Competencias</label>
+                            <input type="checkbox" value="120" name="basicoPlus" id="basicoPlus">
+                        </div>
+                        <div>
+                            <label for="presentacion">Presentación in situ Estudio Diseño UX</label>
+                            <input type="checkbox" value="300" name="presentacion" id="presentacion">
+                        </div>
+                        <div>
+                            <label for="portfolio">Porfolio Personal</label>
+                            <input type="checkbox" value="200" name="portfolio" id="portfolio">
+                        </div>
+                        <div>
+                            <label for="mapaGps">Mapa màs  Localización GPS</label>
+                            <input type="checkbox" value="210" name="mapaGps" id="mapaGps">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="presupuesto">Presupuesto Estimado</label>
+                        <input id="presupuesto" type="text" value="">
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <h3>Aceptación de condiciones y envió de presupuesto</h3>
+                    <div>
+                       <input type="checkbox" name="acepta" value="SI" id="acepta" required>
+                       <label for="acepta">Acepto la política de privacidad</label>
+                       <div class="button-contenedor">
+                        <button type="submit" id="enviar">Enviar</button>
+                        <button type="reset" id="reset">Borrar</button>
+
+                       </div> 
+                    </div>
+
+                </div>
+            </form>
+                
+           </div>
+            
+        </main>
+        <footer>
+            
+            <div><img src="../assets/images/2.png" alt="eslogan" class="logo2" width="1584" height="396"></div> 
+                <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/instagram.png" alt="instagram" width="512" height="512" class="soci1"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/facebook.png" alt="facebook" width="512" height="512" class="soci1"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn" width="512" height="512" class="soci"></a>
+                <a href="https://twitter.com" target="_blank"><img src="../assets/images/twitter_5968830.png" alt="twitter" width="512" height="512" class="soci"></a>
+            <div class="direc"><p>©Antonio Fco Mellado. Todos los derechos reservados.</p>
+                <div class="poli"><a href="../views/politica.html">Política de Privacidad y Cookies.Condiciones de Venta</a></div>  
+                <p>Calle Granada, 19 Alcalá del Rio. 41200. Sevilla</p></div>
+      
+       </footer>
+       
+       <script src="../js/presupuesto.js"></script>
+       <script src="../js/javascript.js"></script>
+       
+   
+</body>
+</html>
