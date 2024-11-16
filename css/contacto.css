@@ -3,13 +3,15 @@
 
  .mapa{
     display: block;
-    height: 450px;
+    height: 550px;
     width: 50%;
     border: 2px solid white;
     border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
     margin: 0 auto;
     padding: 5px;
     backdrop-filter: blur(10px);
+    color: black;
     
  }
 

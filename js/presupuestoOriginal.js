@@ -3,17 +3,10 @@ const apellidosInput = document.getElementById('apellidos');
 const telefonoInput = document.getElementById('telefono');
 const emailInput = document.getElementById('email');
 const formulario = document.getElementById('form');
-const tipoPag = document.getElementById("base");
-const plazoMes = document.getElementById("plazo");
-const opciones = document.querySelectorAll(".extras1>input");
-const preTotal = document.getElementById("total");
-
-
-let sumaTotal = 0;
 
 function validarNombre(){
     const nombre = nombreInput.value
-    const nombrePattern = /^[a-zA-ZÑñÁáÉéÍíÓóÚúºª. ]{4,15}$/;
+    const nombrePattern = /^[a-zA-ZÑñÁáÉéÍíÓóÚú ]{4,15}$/;
     if (nombre.length >= 4 && nombre.length <= 15 && nombrePattern.test(nombre)) {
         nombreInput.classList.add('valido');
         nombreInput.classList.remove('invalido');
@@ -26,7 +19,7 @@ function validarNombre(){
 };
 function validarApellidos(){
     const apellidos = apellidosInput.value
-    const apellidosPattern = /^[a-zA-ZÑñÁáÉéÍíÓóÚúºª. ]{10,40}$/;
+    const apellidosPattern = /^[a-zA-ZÑñÁáÉéÍíÓóÚú ]{10,40}$/;
     if (apellidos.length >=10 && apellidos.length <= 40 && apellidosPattern.test(apellidos)) {
     apellidosInput.classList.add('valido');
     apellidosInput.classList.remove('invalido');
@@ -79,54 +72,18 @@ emailInput.addEventListener('input', validarEmail);
 
 
 formulario.addEventListener('submit', function(event) {
-    event.preventDefault();
-    validarNombre();
-    validarApellidos();
-    validarTelefono();
-    validarEmail();
+    event.preventDefault()
+    validarNombre()
+    validarApellidos()
+    validarTelefono()
+    validarEmail()
     
 
     if(nombreInput.classList.contains('valido') && apellidosInput.classList.contains('valido') && telefonoInput.classList.contains('valido') && emailInput.classList.contains('valido')) {
         alert('Formulario enviado correctamente');
         resetFormulario();
     } else {
-        alert('Por favor, corrija los errores en el formulario');
+        alert('Por favor, corrija los errores en el formulario')
     }
 })
 
-
-let suma = ()=>{
-    sumaTotal = parseInt(tipoPag.value);
-    switch (plazoMes.value) {
-        case "0":
-            sumaTotal += 0;
-            break;
-        case "3" :
-            sumaTotal *= 1.10;
-            break;
-        case "6" :
-            sumaTotal *= 1.20;
-            break;
-        case "12" :
-            sumaTotal *= 1.25;
-
-        default:
-            sumaTotal +=0;
-            break;
-    }
-    
-    opciones.forEach(element => {
-        if(element.checked){
-            sumaTotal += parseInt(element.value);
-        }
-    });
-
-    preTotal.value = sumaTotal ;
-}
-
-opciones.forEach(element => {
-    element.addEventListener("change", suma);
-});
-
-tipoPag.addEventListener("change", suma);
-plazoMes.addEventListener("change", suma);
