@@ -1,114 +1,51 @@
 *{
-    margin: 0 auto;
-    padding: 2px;
-    box-sizing: border-box;
-    
+    font-family: 'Playpen Sans', cursive; 
 }
-
 body{
     background: linear-gradient(to top, rgb(43, 42, 42), 20%, rgb(170, 172, 172));
-    font-family: 'Playpen Sans', cursive;  
-    color: rgb(230, 235, 240);
-     
 }
-/* -------------------HEADER------------------ */
 header{
+    background-color: rgb(170, 172, 172);
     position: sticky;
     top: 0;
-    backdrop-filter: blur(10px);
-    z-index: 100;   
+    z-index: 100;
 }
-
-h1{
-    font-size: 50px;
-    text-align: center;  
-}
-
-h2{
-    text-align: center;
-}
-
-p span{
-    text-transform:uppercase;
-    font-weight: 500;
-}
-
-ul{
-    text-align: center;
-    list-style: none;
-    padding: 0; 
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(10px);
-}
-
-li{
-    text-align: center;
-    margin: 0px 20px;
-    border: 2px solid rgb(238, 236, 236);
-    background: rgb(100, 99, 99);
-    padding: 8px;
+.container{
     color: white;
-    border-radius: 10px;
+    padding: 20px;
+}
+.img-fluid{
+    width:1920px;
+    border: solid 2px white;
+    border-radius: 10px;  
+}
+.text-light{
+    font-size: 30px;
+    text-align: center;
     font-weight: 600;
-    display:inline-block;
-    justify-content: center;
-    align-items: center;           
+    padding: 5px;      
+}
+.title{
+    text-align: center;
 }
 
- li:hover{
-    background-color: rgb(39, 37, 37);
+.navbar:toggler{
+    background-color: brown;
 }
-.nav1{
-    background-color: rgb(8, 8, 8);
-    justify-content: center;
-    align-items: center;
-    
-}
-
-a{
-    text-decoration: none;
-    color: rgb(243, 245, 247); 
-
-}
-
-
-
-.logo1{
-    display: block;
-    width: 80%;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px black;
-    height: 296px;
-    
-}
-
- .dise {
-    width: 250px;
-    height: 150px;
-    border-radius: 10px;
-}
-
-.imaux, .diseweb{
+.dise{
     float: right;
     margin-left: 20px;
     width: 250px;
-    height: 150px;   
-}
-
-/*--------------- FOOTER------------*/
-.logo2{
-    display: block;
-    width: 80%;
-    margin: auto;
+    height: 150px; 
     border-radius: 10px;
-    box-shadow: 5px 5px 15px black;
-    height: 296px;
-    
-    
 }
-
+.dise1{
+    float: left;
+    margin-right: 20px;
+    width: 250px;
+    height: 150px; 
+    border-radius: 10px;
+}
 .soci{
     height: 60px;
     width: 60px;
@@ -116,9 +53,8 @@ a{
     padding: 15px;
     margin-right: 10px; 
     transition: all .3s ease; 
-}
-
-.soci1{
+    }
+    .soci1{
     height: 60px;
     width: 60px;
     float: left;
@@ -126,35 +62,28 @@ a{
     margin-left: 10px;
     transition: all .3s ease;
 }
-
-.soci:hover{
-    transform: translateY(-5px) scale(1.05);
-}
-
-.soci1:hover{
-    transform: translateY(-5px) scale(1.05);
-}
-
-h3{
-    text-align: left;
-}
-
-.arti1, .arti2, .arti3{
-    padding: 50px;
-}
-
 .direc{
-    float:inherit;
+    color: white;
     text-align: center;
 }
 
 .poli{
     text-transform:uppercase;
-    font-weight: 700;
+    font-weight: 600;
+    padding: 10px;    
 }
 
 
-
-
-
+li{
+    font-size: 18px;              
+}
+li:hover{
+    background-color: white;
+    border-radius: 10px;
+}
+nav{
+    
+    justify-content: center;
+    align-items: center;
+}
  

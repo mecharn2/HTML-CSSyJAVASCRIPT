@@ -22,9 +22,13 @@
     gap: 10px;
     margin: 0 auto;    
 }
+h2{
+    text-align: center;
+}
 
 h3{
     font-size: 20px;
+    text-align: center;
 }
 
 .condiciones{
@@ -65,10 +69,13 @@ button{
     margin: 10px;
 }
 
-.extras{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.pago{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.extras1{
+    padding: 15px;
 }
 
 .valido{
@@ -82,4 +89,11 @@ button{
 .error{
     color: red;
 }
+.poliEnvio{
+    color: black;
+    text-align: center;
+}
 
+.plazo{
+    padding: 20px;
+}
